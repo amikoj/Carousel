@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Carousel</string>
+
+
+
+    <integer-array name="resIds">
+        <item>@drawable/ic_launcher_background</item>
+        <item>@drawable/ic_launcher_background</item>
+    </integer-array>
+
+</resources>
