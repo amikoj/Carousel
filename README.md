@@ -20,7 +20,7 @@
 ```groovy
 
 dependencies {
-	        implementation 'com.github.amikoj:Carousel:1.1'
+	        implementation 'com.github.amikoj:Carousel:1.2'
 	}
 
 ```
