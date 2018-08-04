@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "cn.enjoyoday.cn.carousel"
+        applicationId "cn.enjoyoday.cn.carousel.demo"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
@@ -31,8 +31,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    // Glide 图片加载框架
-    implementation 'com.github.bumptech.glide:glide:4.7.1'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.github.amikoj:Carousel:1.0'
 
 }

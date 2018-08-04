@@ -1,7 +1,8 @@
-package cn.enjoyoday.cn.carousel
+package cn.enjoyoday.cn.carousel.demo
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+
 
 class MainActivity : AppCompatActivity() {
 

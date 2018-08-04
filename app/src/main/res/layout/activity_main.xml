@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
 
-    <cn.enjoyoday.cn.carousel.CarouselLayout
+    <cn.enjoyoday.carousel.CarouselLayout
         android:layout_width="match_parent"
         app:type="ONLINE"
         app:urls="@array/ad_urls"
