@@ -1,13 +1,5 @@
 <resources>
-    <string name="app_name">Carousel</string>
-
-
-
-    <integer-array name="resIds">
-        <item>@drawable/ic_launcher_background</item>
-        <item>@drawable/ic_launcher_background</item>
-    </integer-array>
-
+    <string name="app_name">lib</string>
 
     <string-array name="ad_urls">
         <item>http://ww4.sinaimg.cn/large/006uZZy8jw1faic21363tj30ci08ct96.jpg</item>
@@ -16,5 +8,4 @@
         <item>http://ww4.sinaimg.cn/large/006uZZy8jw1faic2e7vsaj30ci08cglz.jpg</item>
         <item>http://ww4.sinaimg.cn/large/006uZZy8jw1faic21363tj30ci08ct96.jpg</item>
     </string-array>
-
 </resources>

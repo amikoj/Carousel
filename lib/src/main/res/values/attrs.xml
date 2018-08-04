@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CarouselLayout">
+        <attr name="type" format="enum">
+            <enum name="LOCAL" value="0"/>
+            <enum name="ONLINE" value="1"/>
+        </attr>
+        <attr name="resIds" format="reference"/>
+        <attr name="urls" format="reference"/>
+    </declare-styleable>
+</resources>

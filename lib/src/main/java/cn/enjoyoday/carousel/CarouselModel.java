@@ -1,4 +1,4 @@
-package cn.enjoyoday.cn.carousel;
+package cn.enjoyoday.carousel;
 
 /**
  * carousel数据源

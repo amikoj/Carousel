@@ -1,4 +1,4 @@
-package cn.enjoyoday.cn.carousel;
+package cn.enjoyoday.carousel;
 
 import android.content.Context;
 import android.content.res.TypedArray;
