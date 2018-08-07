@@ -104,9 +104,8 @@ public class CarouselLayout extends RelativeLayout {
             ImageView imageView = new ImageView(context);
             imageView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.MATCH_PARENT));
-            imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
             int innerPosition = position == 0? carouselModels.size()-1:position == carouselModels.size()+1?0:position-1;
-            Log.e(TAG,"postion:"+position+"\n,innerPos:"+innerPosition);
             CarouselModel carouselModel = carouselModels.get(innerPosition);
             if (type == LOCAL) {
                 //本地
@@ -189,7 +188,7 @@ public class CarouselLayout extends RelativeLayout {
                             if (positionOffset == 0
                                     && mPreviousOffset == 0
                                     && (position == 0 || position == size + 1)) {
-                                Log.d(TAG,"onPageScrolled,position:"+position+",realPos:"+realPosition);
+//                                Log.d(TAG,"onPageScrolled,position:"+position+",realPos:"+realPosition);
                                 viewPager.setCurrentItem(realPosition, false);
                             }
                         }
@@ -232,10 +231,6 @@ public class CarouselLayout extends RelativeLayout {
 
         if (size>0) {
             viewPager.setCurrentItem(1);
-//            RadioButton radioButton = (RadioButton) radioGroup.getChildAt(0);
-//            if (radioButton != null) {
-//                radioButton.setChecked(true);
-//            }
         }
         startAnimation();
     }
@@ -288,7 +283,7 @@ public class CarouselLayout extends RelativeLayout {
      * @param id
      */
     public void setResId(Integer id) {
-        if (type == LOCAL) {
+        if (type == LOCAL && id > 0) {
             //local
             try {
                 int[] ids = context.getResources().getIntArray(id);
@@ -330,12 +325,19 @@ public class CarouselLayout extends RelativeLayout {
      * @param id
      */
     public void setUrls(Integer id) {
-        String[] strings = context.getResources().getStringArray(id);
-        if (strings.length > 0) {
-            // glide load online images
-            setUrls(strings);
-        }
+        if (type == ONLINE && id > 0) {
+            try {
+                String[] strings = context.getResources().getStringArray(id);
+                if (strings.length > 0) {
+                    // glide load online images
+                    setUrls(strings);
+                }
+            }catch (Exception e){
+                e.printStackTrace();
+                Log.e(TAG,"设置url失败:"+e.getMessage());
+            }
 
+        }
     }
 
 
