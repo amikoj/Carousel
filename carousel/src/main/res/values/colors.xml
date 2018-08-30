@@ -6,5 +6,7 @@
 
 
     <color name="white">#ffffff</color>
-    <color name="dark">#a0888888</color>
+    <color name="dark">#a1a1a1</color>
+    <drawable name="default_bg">#bababa</drawable>
+    <drawable name="default_failed">@drawable/load_failed</drawable>
 </resources>

@@ -7,5 +7,7 @@
         </attr>
         <attr name="resIds" format="reference"/>
         <attr name="urls" format="reference"/>
+        <attr name="loadFailed" format="reference"/>
+        <attr name="preLoad" format="reference"/>
     </declare-styleable>
 </resources>

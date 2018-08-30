@@ -2,6 +2,9 @@ package cn.enjoyoday.carousel;
 
 import android.content.Context;
 
+/**
+ * @author hfcai
+ */
 public class ViewUtils {
 
     /**
