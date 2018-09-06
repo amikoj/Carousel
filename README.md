@@ -21,6 +21,7 @@
 
 dependencies {
 	        implementation 'com.github.amikoj:Carousel:1.2.1'
+		implementation 'com.github.bumptech.glide:glide:4.7.1'
 	}
 
 ```
